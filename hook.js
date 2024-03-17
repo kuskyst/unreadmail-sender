@@ -1,8 +1,8 @@
 function hook() {
- const threads = GmailApp.search('label:unread');  // –¢“Ç‚ÌƒXƒŒƒbƒh‚ğæ“¾
+ const threads = GmailApp.search('label:unread');  // æœªèª­ã®ã‚¹ãƒ¬ãƒƒãƒ‰ã‚’å–å¾—
 
  if (threads.length == 0) {
-   Logger.log('V‹KƒƒbƒZ[ƒW‚È‚µ');
+   Logger.log('æ–°è¦ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãªã—');
    return
  }
 
@@ -10,7 +10,7 @@ function hook() {
    const messages = thread.getMessages();
 
    const payloads = messages.map(function (message) {
-     message.markRead();  // ƒ[ƒ‹‚ğŠù“Ç‚Éİ’è‚·‚é
+     message.markRead();
 
      const from = message.getFrom();
      const subject = message.getSubject();
