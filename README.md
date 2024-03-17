@@ -1,1 +1,3 @@
 # unreadmail-sender
+gmailの未読メールをdiscordに通知
+SpreadSheetのA1セルに通知したいウェブフックURLを記入して、AppScriptからコール
